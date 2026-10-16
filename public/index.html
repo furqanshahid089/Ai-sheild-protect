@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Shield Protector analyzes URLs and messages for phishing and scam risk indicators. A defensive helper, not a guarantee of safety." />
+  <title>AI Shield Protector</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2310b981' d='M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <div class="app">
+    <!-- Sidebar navigation -->
+    <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </span>
+        <span>
+          <b>AI Shield</b>
+          <span>Protector</span>
+        </span>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="#/" data-route="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12 12 3l9 9"/><path d="M5 10v10h14V10"/></svg> Home</a>
+        <a href="#/dashboard" data-route="/dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg> Dashboard</a>
+
+        <div class="group-label">Scanners</div>
+        <a href="#/url" data-route="/url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg> URL Scanner</a>
+        <a href="#/message" data-route="/message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Message Scanner</a>
+        <a href="#/history" data-route="/history"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v5h5"/><path d="M3.05 13a9 9 0 1 0 2.6-6.4L3 8"/><path d="M12 7v5l3 2"/></svg> Scan History</a>
+
+        <div class="group-label">Learn &amp; Settings</div>
+        <a href="#/education" data-route="/education"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 2 8l10 5 10-5z"/><path d="M6 10v6c0 1 2.7 3 6 3s6-2 6-3v-6"/></svg> Threat Education</a>
+        <a href="#/settings" data-route="/settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 0 1-4 0v-.1A1.6 1.6 0 0 0 7 19.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H3a2 2 0 0 1 0-4h.1A1.6 1.6 0 0 0 4.7 7l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 2.7-1.1V3a2 2 0 0 1 4 0v.1a1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0 1.1 2.7H21a2 2 0 0 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/></svg> Security Settings</a>
+        <a href="#/account" data-route="/account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 12 0v1"/></svg> Account</a>
+        <a href="#/privacy" data-route="/privacy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Privacy Policy</a>
+        <a href="#/about" data-route="/about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> About &amp; Docs</a>
+      </nav>
+    </aside>
+
+    <div class="scrim hidden" id="scrim"></div>
+
+    <!-- Main area -->
+    <div class="main">
+      <header class="topbar">
+        <div class="row">
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+          <h1 id="page-title">AI Shield Protector</h1>
+        </div>
+        <div class="topbar-actions">
+          <span class="badge" id="health-badge" title="Backend status">checking…</span>
+          <button class="btn sm ghost" id="theme-toggle" aria-label="Toggle light or dark theme">Theme</button>
+        </div>
+      </header>
+
+      <main class="content" id="main" tabindex="-1">
+        <div id="view" aria-live="polite"></div>
+      </main>
+    </div>
+  </div>
+
+  <div id="toasts" aria-live="assertive" aria-atomic="true"></div>
+
+  <!-- Confirmation dialog -->
+  <dialog id="confirm-dialog">
+    <h2 id="confirm-title" style="margin-top:0">Are you sure?</h2>
+    <p id="confirm-message" class="muted"></p>
+    <div class="row space-between mt">
+      <button class="btn ghost" id="confirm-cancel">Cancel</button>
+      <button class="btn danger" id="confirm-ok">Confirm</button>
+    </div>
+  </dialog>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

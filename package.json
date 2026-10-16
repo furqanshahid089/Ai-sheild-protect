@@ -1,0 +1,24 @@
+{
+  "name": "ai-shield-protector",
+  "version": "1.0.0",
+  "description": "AI Shield Protector - a defensive cybersecurity helper that analyzes URLs and scam messages for risk indicators.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "cybersecurity",
+    "phishing",
+    "url-analysis",
+    "scam-detection"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0"
+  }
+}

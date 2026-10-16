@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Local database / data store (created at runtime)
+*.db
+*.db-journal
+ai_shield.json
+ai_shield.json.tmp
+*.json.tmp
+
+# Environment / secrets
+.env
+
+# Logs & temp
+npm-debug.log*
+*.log
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
